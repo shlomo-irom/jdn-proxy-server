@@ -1,0 +1,44 @@
+# Terraform related files - CRITICAL
+.terraform/
+*.tfplan
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# Sensitive files - CRITICAL
+*.pem
+*.tfvars
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.iml
+*.swp
+*~
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# Node.js specific (if applicable)
+node_modules/
+npm-debug.log
+
+# Python specific (if applicable)
+__pycache__/
+*.pyc
+venv/
+
+# Other common large files or build artifacts
+*.log
+*.exe
+*.dll
+*.so
+*.o
+*.zip
+*.tar.gz
+
+# Nested Git repository - IMPORTANT!
+# This specifically ignores a folder named 'jdn-proxy-server'
+# if it exists *inside* your main project folder and is a Git repo itself.
+jdn-proxy-server/
